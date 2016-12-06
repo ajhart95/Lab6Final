@@ -264,7 +264,6 @@ public class PokerTableController implements Initializable {
 	}
 
 	public void Handle_GameState(GamePlay HubPokerGame) {
-		// TODO: Deal the cards to the client(s)
 
 		GamePlay.StateOfGamePlay(HubPokerGame);
 
@@ -437,14 +436,5 @@ public class PokerTableController implements Initializable {
 		}
 	}
 
-	private void FadeButton(Button btn) {
-		FadeTransition ft = new FadeTransition(Duration.millis(3000), btn);
-		ft.setFromValue(1.0);
-		ft.setToValue(0.3);
-		ft.setCycleCount(4);
-		ft.setAutoReverse(true);
-
-		ft.play();
-	}
 
 }
